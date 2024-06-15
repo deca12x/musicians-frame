@@ -4,19 +4,19 @@ import { frames } from "../frames";
 
 const frameHandler = frames(async (ctx) => {
   return {
-    image: "http://localhost:3000/2.jpeg",
+    image: "http://localhost:3000/3.jpeg",
     buttons: [
-      <Button action="post" target={{ pathname: "/janis" }}>
-        Jimmy Page
+      <Button action="post" target={{ pathname: "/fail" }}>
+        Joni Mitchell
       </Button>,
       <Button action="post" target={{ pathname: "/fail" }}>
-        Jimmy Hendrix
+        Nina Simone
       </Button>,
       <Button action="post" target={{ pathname: "/fail" }}>
-        Jimmy Buffet
+        Stevie Nicks
       </Button>,
-      <Button action="post" target={{ pathname: "/fail" }}>
-        Jimmy Reed
+      <Button action="post" target={{ pathname: "/bb" }}>
+        Janis Joplin
       </Button>,
     ],
   };
