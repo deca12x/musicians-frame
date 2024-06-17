@@ -6,8 +6,8 @@ import { appURL, currentURL } from "./utils";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
-    title: "frames.js starter",
-    description: "This is a frames.js starter template",
+    title: "deca starter",
+    description: "This is deca's first frame",
     other: {
       ...(await fetchMetadata(new URL("/frames", appURL()))),
     },
