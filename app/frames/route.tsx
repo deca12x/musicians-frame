@@ -2,7 +2,6 @@
 import { Button } from "frames.js/next";
 import { frames } from "./frames";
 import { appURL } from "../utils";
-// import { appURL } from "../utils";
 
 const frameHandler = frames(async (ctx) => {
   // const counter = ctx.message
