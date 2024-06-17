@@ -1,10 +1,11 @@
 /* eslint-disable react/jsx-key */
 import { Button } from "frames.js/next";
 import { frames } from "../frames";
+import { appURL } from "../../utils";
 
 const frameHandler = frames(async (ctx) => {
   return {
-    image: "http://localhost:3000/game-over.png",
+    image: `${appURL()}/game-over.png`,
     buttons: [
       <Button action="post" target={{ pathname: "/" }}>
         Start Again

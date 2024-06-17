@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-key */
 import { Button } from "frames.js/next";
 import { frames } from "./frames";
+import { appURL } from "../utils";
 // import { appURL } from "../utils";
 
 const frameHandler = frames(async (ctx) => {
@@ -11,7 +12,7 @@ const frameHandler = frames(async (ctx) => {
   //   : ctx.state.counter;
 
   return {
-    image: "http://localhost:3000/music-intro-frame.png",
+    image: `${appURL()}/music-intro-frame.png`,
     buttons: [
       <Button action="post" target={{ pathname: "/bob" }}>
         Start Quiz
