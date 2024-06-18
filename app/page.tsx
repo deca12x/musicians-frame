@@ -6,7 +6,7 @@ import { appURL, currentURL } from "./utils";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
-    title: "deca starter",
+    title: "🎸Music🎹Quiz🎺",
     description: "This is deca's first frame",
     other: {
       ...(await fetchMetadata(new URL("/frames", appURL()))),
